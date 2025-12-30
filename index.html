@@ -379,7 +379,7 @@
       if (subRemaining > 0) {
         const subHours = Math.floor(subRemaining / ONE_HOUR);
         const subAwake = Math.floor((subRemaining / ONE_DAY) * 15);
-        sub.innerHTML = `西武文理中学校まで ${formatRemaining(subRemaining)}<div class=\"remaining-hours\">残り総時間：${subHours} 時間</div><div class=\"remaining-hours\">残り起床時間：約 ${subAwake} 時間</div><hr width="50%"></hr>`;
+        sub.innerHTML = `西武文理中学校まで </br>${formatRemaining(subRemaining)}<div class=\"remaining-hours\">残り総時間：${subHours} 時間</div><div class=\"remaining-hours\">残り起床時間：約 ${subAwake} 時間</div><hr width="50%"></hr>`;
       } else {
         sub.textContent = `西武文理中学校 受験日当日`;
       }
