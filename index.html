@@ -124,6 +124,7 @@
 
   const ONE_MIN = 1000 * 60;
   const ONE_HOUR = ONE_MIN * 60;
+  const QUATER_DAY = ONE_HOUR * 6;
   const ONE_DAY = ONE_HOUR * 24;
 
   function formatRemaining(ms) {
@@ -407,8 +408,8 @@
   update();
   setInterval(update, 1000);
 
-  // ★ 1時間ごとに自動リロード
-  setInterval(() => location.reload(), ONE_HOUR);
+  // ★ 6時間ごとに自動リロード
+  setInterval(() => location.reload(), QUATER_DAY);
 </script>
 </body>
 </html>
